@@ -2,7 +2,7 @@
 A repository for the 2023 T9Hacks Hackathon project SocialUniverse
 
 ## Front-End
-Our front-end work includes a logo, a design schema, and various prototypes of the main website. We have two Figma prototypes (one mobile, one desktop), and a Django prototype.
+Our front-end work includes a logo, a design schema, and various prototypes of the main website. We have two Figma prototypes (one mobile, one desktop), and a Django prototype you can run on your machine once cloned.
 
 __Desktop Figma Prototype__: [Figma](https://www.figma.com/proto/KySqXzLsiS38Spjk5eqGqP/T9-Hacks-Social-Universe-Prototype?page-id=530%3A129&node-id=536%3A31&viewport=-141%2C95%2C0.26&scaling=min-zoom&starting-point-node-id=536%3A31&show-proto-sidebar=1)
 
