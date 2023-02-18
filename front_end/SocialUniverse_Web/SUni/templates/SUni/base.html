@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'SUni/main.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <!-- Title Code Block -->
+    {% if title %}
+        <title>Social Universe | {{ title }}</title>
+    {% else %}
+        <title>Social Universe</title>
+    {% endif %}
+</head>
+
+<body class="body-main">
+    <header>
+        <!-- <nav class="navbar navbar-expand-lg">
+            <img class="d-inline-block align-top d-flex" src="https://i.imgur.com/JuDPccO.png" width="30px" height="30px" alt="SU Logo">
+            <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'SUni-home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'SUni-contact' %}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'SUni-about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'SUni-login' %}">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg">
+            <a href="{% url 'SUni-home' %}" class="navbar-brand ms-3"><img class="rounded-circle" src="https://i.imgur.com/JuDPccO.png" width="36px" height="36px" alt=""></a>
+            <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active mx-3 text-white" aria-current="page" href="{% url 'SUni-home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-white" href="{% url 'SUni-contact' %}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-white" href="{% url 'SUni-about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-white" href="{% url 'SUni-login' %}">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body-div">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+      <div class="footer d-flex flex-column flex-sm-row justify-content-between pt-1 border-top">
+        
+        <div class="text-center text-md-left d-flex">
+            <a href="{% url 'SUni-home' %}" class="navbar-brand mx-3 pt-1"><img class="rounded-circle" src="https://i.imgur.com/JuDPccO.png" width="35px" height="35px" alt="SU Logo"></a>
+            <p class="footer-SUni ms-1 mb-0 pt-2">2023 Social Universe, Inc.</p>
+        </div>
+        <div class="text-center text-md-right">
+            <ul class="list-unstyled d-flex mx-5">    
+                <li class="nav-item mx-5 pt-2"><a class="link-dark" href="#"><a>Terms</a></li>
+                <li class="nav-item mx-5 pt-2"><a class="link-dark" href="#"><a>Privacy</a></li>
+                <li class="nav-item mx-5 pt-2"><a class="link-dark" href="#"><a>Security</a></li>
+                <li class="nav-item mx-5 pt-2"><a class="link-dark" href="#"><a>About</a></li>
+                <li class="nav-item mx-5 pt-2"><a class="link-dark" href="#"><a>FAQ</a></li>
+            </ul>
+        </div>
+        
+      </div>  
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

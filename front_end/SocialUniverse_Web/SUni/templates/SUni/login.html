@@ -1,0 +1,53 @@
+{% extends "SUni/base.html" %}
+
+{% block content %}
+<!-- Insert Body Content Here -->
+
+<div id="login-box" class="loginBox">
+    <h1>Login</h1>
+    <p style="margin-bottom: 2px;">Welcome Back.</p>
+    <p>Please Login to Your Account</p>
+
+    <form class="form-signin text-center" style="width: 60%;">
+        <label class="sr-only" for="login_field"></label>
+        <input id="login_field" class="form-control" style="border-radius: 20px; background-color: #D9B6E0;" type="text" placeholder="Username or Email" autofocus="">
+
+        <a class="label-link" style="display: flex; float: right;" tabindex="0" href="/password_reset">Forgot Password</a>
+
+        <label class="sr-only" for="password_field"></label>
+        <input id="password_field" class="form-control" style="border-radius: 20px;background-color: #D9B6E0;" type="password" placeholder="Password">
+
+        <div class="checkbox mb-3">
+            <label>
+                <input class="text-white" type="checkbox" value="remember-me"> 
+                Remember Me
+                
+            </label>
+        </div>
+
+        <input type="submit" name="commit" value="Login" class="btn btn-primary btn-block js-sign-in-button" 
+        style="width: 100%; border-radius: 20px; background: linear-gradient(180deg, rgba(217, 182, 224, 0.5) -9.76%, rgba(59, 103, 198, 0.5) 78.55%); box-shadow: 0px 4px 4px 10px rgba(0, 0, 0, 0.25); border-radius: 20px;" data-disable-with="Signing in…" data-signin-label="Sign in" data-sso-label="Sign in with your identity provider" development="false">
+        <p></p>
+        
+    </form>
+
+    <div>
+        Don't have an account? <a href="{% url 'SUni-signup' %}">Sign up</a>
+    </div>
+
+    <div class="signupOptions">
+        <p>Or Login with</p>
+        <ul class="list-unstyled">
+            <li class="list-Apple"><a href="https://appleid.apple.com/sign-in"><img src="https://i.imgur.com/dENtnlY.png" alt="Apple"></a></li>
+            <li class="list-Facebook"><a href="https://www.facebook.com/login/"><img src="https://i.imgur.com/PpHgz55.png" alt="Facebook"></a></li>
+            <li class="list-Google"><a href="https://www.google.com/gmail/about/"><img src="https://i.imgur.com/Y9gdTni.png" alt="Google"></a></li>
+            <li class="list-Twitter"><a href="https://twitter.com/login?lang=en/"><img src="https://i.imgur.com/Vko9hC9.png" alt="Twitter"></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="branding">
+    
+</div>
+
+{% endblock content %}

@@ -1,0 +1,49 @@
+{% extends "SUni/base.html" %}
+
+{% block content %}
+<!-- Insert Body Content Here -->
+
+<div id="login-box" class="loginBox">
+    <img style="width: 150px; padding-top: 2rem;" src="https://cdn.discordapp.com/attachments/1076345577270431774/1076602692446728262/Frame_2.png" alt="default pfp">
+
+    <h1 style="padding-top: 1rem; padding-bottom: 0;">Your Username!</h1>
+
+    <form class="form-signin text-center" style="width: 60%;">
+        <label class="sr-only" for="login_field"></label>
+        <input id="login_field" class="form-control" style="border-radius: 20px; background-color: #D9B6E0;" type="text" placeholder="Full Name" autofocus="">
+
+        <label class="sr-only" for="password_field"></label>
+        <input id="password_field" class="form-control" style="border-radius: 20px;background-color: #D9B6E0;" type="password" placeholder="Password">
+
+        <label class="sr-only" for="password_field"></label>
+        <input id="password_field" class="form-control" style="border-radius: 20px;background-color: #D9B6E0;" type="text" placeholder="Your Email Address">
+
+        <label class="sr-only" for="password_field"></label>
+        <input id="password_field" class="form-control" style="border-radius: 20px;background-color: #D9B6E0;" type="text" placeholder="Your Birthday (MM/DD/YYYY)">
+
+        <label class="sr-only" for="password_field"></label>
+        <input id="password_field" class="form-control" style="border-radius: 20px;background-color: #D9B6E0;" type="text" placeholder="Additional Information">
+
+        <label class="sr-only" for="password_field"></label>
+        <input id="password_field" class="form-control" style="border-radius: 20px;background-color: #D9B6E0;" type="text" placeholder="SSN/Driver's License Number">
+
+        <div class="checkbox mb-3">
+            <label>
+                <input class="checkbox-agree text-white" type="checkbox" value="agree"> 
+                I acknowledge that I have read and agree to the policy
+                
+            </label>
+        </div>
+
+        <input type="submit" name="commit" value="Sign Up" class="btn btn-primary btn-block js-sign-up-button" 
+        style="width: 100%; border-radius: 20px; background: linear-gradient(180deg, rgba(217, 182, 224, 0.5) -9.76%, rgba(59, 103, 198, 0.5) 78.55%); box-shadow: 0px 4px 4px 10px rgba(0, 0, 0, 0.25); border-radius: 20px;" data-disable-with="Signing up…" data-signup-label="Sign up" data-sso-label="Sign up with your identity provider" development="false">
+        <p></p>
+        
+    </form>
+</div>
+
+<div class="branding">
+    
+</div>
+
+{% endblock content %}
